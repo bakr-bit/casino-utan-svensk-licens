@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://casino.yatzyregler.com/sitemap.xml

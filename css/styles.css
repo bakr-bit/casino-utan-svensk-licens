@@ -1,9 +1,8 @@
 @charset "UTF-8";
 
 /* ============================================================
-   1. Import Fonts
+   1. Fonts - Using System Font Stack
    ============================================================ */
-@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&family=Nunito:wght@400;600;700&display=swap');
 
 /* ============================================================
    2. CSS Reset
@@ -34,7 +33,6 @@ img {
     max-width: 100%;
     height: auto;
     display: block;
-    border-radius: 12px;
 }
 
 /* ============================================================
@@ -48,8 +46,8 @@ img {
     --text-light: #6b7280;
     --background-color: #fafafa;
     --header-height: 100px;
-    --font-primary: 'Rubik', sans-serif;
-    --font-secondary: 'Nunito', sans-serif;
+    --font-primary: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    --font-secondary: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
 }
 
 /* ============================================================
@@ -133,7 +131,6 @@ em {
     color: #fff;
     padding: 1.5rem 0;
     margin-bottom: 2rem;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
 }
 
 .header .container {
@@ -207,7 +204,6 @@ section img {
 #table-of-contents a {
     color: var(--primary-color);
     font-weight: 600;
-    transition: color 0.2s ease;
     text-decoration: underline;
 }
 
@@ -254,7 +250,6 @@ ol li {
 a {
     color: #dc2626;
     font-weight: 600;
-    transition: color 0.2s ease;
 }
 
 a:hover {
@@ -265,9 +260,9 @@ a:hover {
 /* Horizontal Rules */
 hr {
     border: none;
-    height: 2px;
-    background: linear-gradient(90deg, transparent, #e5e7eb 20%, #e5e7eb 80%, transparent);
-    margin: 3rem 0;
+    height: 1px;
+    background: #e5e7eb;
+    margin: 2rem 0;
 }
 
 /* ============================================================
